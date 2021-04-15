@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+	<div class="container">
+		<h1 id="title">Mocca Survey Form</h1>
+		<p id="description" class="mt-1">Please fill the form, thank you.</p>
+	
+		<form id="survey-form" class="mt-2">
+			<label for="name" id="name-label">Name:</label>
+			<input type="text" id="name" name="name" placeholder="enter your name" required>
+			<label for="email" id="email-label">Email:</label>
+			<input type="email" id="email" name="email" placeholder="enter your email" required>
+			<label for="number" id="number-label">age:</label>
+			<input type="number" id="number" name="number" placeholder="enter your age" min="15" max="40" required>
+
+			<label for="dropdown" id="dropdown-label">
+				How do you know MOCCA?
+				<select id="dropdown">
+					<option>Test 1</option>
+					<option>Test 2</option>
+				</select>
+			</label>
+
+			<label for="member" id="member-label"> Who is your favorite member? </label>
+
+			<input type="radio" name="member" value="1" checked /> Arina <br />
+			<input type="radio" name="member" value="2" /> Riko <br />
+			<input type="radio" name="member" value="3" /> Indra <br />
+			<input type="radio" name="member" value="4" /> Toma <br />
+
+			<br /><br />
+			<label for="albums" id="albums-label"> Please choose your favorite album(s)? </label>
+			<input type="checkbox" value="cry-for-me" /> My Diary <br />
+			<input type="checkbox" value="eyes-wide-open" /> Friends <br />
+			<input type="checkbox" value="more-and-more" /> Colours <br />
+			<input type="checkbox" value="feel-special" /> Home <br />
+			<input type="checkbox" value="more-and-more" /> Lima <br />
+			<input type="checkbox" value="more-and-more" /> Day by Day <br />
+
+			<br /><br />
+			<label for="comments" id="comments-label">
+				Any comments or suggestions?
+				<textarea id="comments" cols="30" rows="10"></textarea>
+			</label>
+			<br><button id="submit" type="submit">Submit</button>
+		</form>
+	</div>
+
+	<figcaption>image by <a href=" http://www.indrani.net">Meutia Chaerani / Indradi Soemardjan</a></figcaption>
+	
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
